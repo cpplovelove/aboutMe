@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>index</title>
+	<script type="text/javascript">
+		window.onload = function(){
+		var home=document.getElementById('home');
+		var info=document.getElementById('info');
+		var photo=document.getElementById('photo');
+		var time=document.getElementById('time');
+
+		home.addEventListener('click',function() {location.replace("index.html");});
+		info.addEventListener('click',function() {location.replace("aboutMe.html");});
+		photo.addEventListener('click',function() {location.replace("photo.html");});
+		time.addEventListener('click',function() {location.replace("time.html");});}	
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+	<header>
+	<nav>
+		<input type="radio" id="home" name="radio">
+		<label for="home" class="home">| home</label>
+		<input type="radio" id="info" name="radio">
+		<label for="info" class="info"  checked="checked">| info</label>
+		<input type="radio" id="photo" name="radio">
+		<label for="photo" class="photo">| photo</label>
+		<input type="radio" id="time" name="radio">
+		<label for="time" class="time">| time</label>
+	</nav>
+		<p id="welcome">welcome</p>
+		<p id="to">to</p>
+		<p id="my">my</p>
+		<p id="home">home</p>
+	</header>	
+
+<body>
+	<div class="layout">
+		<div class="fastTab">
+				>FAST TAB<<br>
+				<br>
+			<label for="home" class="home">HOME</label>
+			<label for="info" class="info">INFO</label>
+			<label for="photo" class="photo">PHOTO</label>
+			<label for="time" class="time">TIME</label>
+		</div>
+		<div class="content">
+			<div class="text">
+				<h1>GoodAt</h1>
+				<p id="hr">--------------------------------------------------------------</p>
+				<p>시스템 프로그래밍<br>
+				알고리즘<br>웹프로그래밍<br>
+				중급일본어<br>자료구조</p>
+			</div>
+			<div class="text">
+				<h1>Portfolio</h1>
+				<p id="hr">--------------------------------------------------------------</p>
+				<p>공과대학 선거위원회 관련해서 심리테스트 웹앱만들기<br>
+					자기 소개 웹사이트만들기->WAS이용해서 개인 웹사이트 만들기<br>
+					미소년연애시뮬레이션+바운스볼 웹사이트 프론트앤드</p>
+				<br><p>관련 프로젝트는선영의 깃허브에서 확인하세요</p>
+				<a href="https://github.com/cpplovelove">github:cpplovelove</a>	
+			</div>
+			<div class="text">			
+				<h1>NewlyPro</h1>
+				<p id="hr">--------------------------------------------------------------</p>
+				<p>지금만들고 있는 이 웹프로젝트!!!NEW</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>copyrigth@sunyoungee</footer>
+</body>
+</html>
